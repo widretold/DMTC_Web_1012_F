@@ -12,8 +12,9 @@ class Home extends MY_Controller {
 		$user_id = $this->session->set_userdata('user_id');
 		
  		$data = "";
- 		$eventlist = $this -> event -> get_event_list();
  		
+ 		/*
+ 		$eventlist = $this -> event -> get_event_list();
  		$i = 1;
  		foreach($eventlist as $event_id){
  			$data['event_' + $i + '_title'] = $this -> event -> get_event_title($event_id);
@@ -25,6 +26,7 @@ class Home extends MY_Controller {
  			$data['event_' + $i + '_walk'] = $this -> event -> get_event_walk($event_id);
  			$i++;
  		}
+ 		*/
  		
  		$data['page_title'] = '卓飲み.com トップページ';
  		$data['user_img'] = $this -> user -> get_User(user_id);
@@ -38,6 +40,8 @@ class Home extends MY_Controller {
  			$i++;
  		}
  		*/
+		
+		var_dump($data);
 		
 		$this->load->view('header.php',$data);
 		$this->load->view('home/main.php',$data);
