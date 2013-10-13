@@ -4,15 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Eedge">
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="System/global.css">
     <link rel="stylesheet" href="System/top/top.css">
-    <link rel="canonical" href="http://www.ed.tus.ac.jp/orche/"/>
-    <title>ìåãûóùâ»ëÂäwä«å∑äyícåˆéÆwebÉTÉCÉg</title>
-    <meta name="description" content="ââëtâÔÇÃì˙íˆÇ‚ã»ñ⁄ÇÃè–âÓÅAäàìÆãLò^ÅAÉpÅ[Égè–âÓÅAéwäˆé“è–âÓìôÅB" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <title><?php echo $page_title; ?></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<script src="System/top/slides.min.jquery.js"></script>
 	<script src="System/top/slides.js"></script>
 	<script src="System/global.js"></script>
@@ -21,26 +18,29 @@
 <body>
     <header>
         <nav>
-            <section id="global-menu">
-                <a href="index.html"><img src = "System/toplogo.png" alt="ìåãûóùâ»ëÂäwä«å∑äyícÉgÉbÉvÉyÅ|ÉW"></a>
+        <a href="index.html"><img src = "logo.png" alt="ÂçìÈ£≤„Åø.com"></a>
+        <!--
+            <div id="global-menu">
+                
                 <section id="global-submenu">
-                    <a href="sitemap/index.html">ÉTÉCÉgÉ}ÉbÉv</a>
+                    <a href="sitemap/index.html">„Çµ„Ç§„Éà„Éû„ÉÉ„Éó</a>
                     <a href="http://orchenote.bbs.fc2.com/">BBS</a>
-                    <a href="link/index.html">ÉäÉìÉN</a>
-                    <a href="http://www-cgi.ed.tus.ac.jp/tus-cgi-bin/orche/schedule.cgi">ÉXÉPÉWÉÖÅ[Éã</a>
+                    <a href="link/index.html">„É™„É≥„ÇØ</a>
+                    <a href="http://www-cgi.ed.tus.ac.jp/tus-cgi-bin/orche/schedule.cgi">„Çπ„Ç±„Ç∏„É•„Éº„É´</a>
                 </section>
-			<div id="global-mainmenu-helper" onClick="showGlobalMainMenu();">Å•MENU</div>
-			<div id="global-mainmenu-closer" onClick="closeGlobalMainMenu();">Å£</div>
+			<div id="global-mainmenu-helper" onClick="showGlobalMainMenu();">‚ñºMENU</div>
+			<div id="global-mainmenu-closer" onClick="closeGlobalMainMenu();">‚ñ≤</div>
                 <section id="global-mainmenu">
                     <ul>
-                        <li><a href="concert_info/index.html"><img src="System/subnavi_concert.png" alt="ââëtâÔèÓïÒ"></a></li>
-                        <li><a href="conductor_trainer/index.html"><img src="System/subnavi_conductor_trainer.png" alt="éwäˆé“&amp;ÉgÉåÅ[ÉiÅ[è–âÓ"></a></li>
-	                    <li><a href="invitation/index.html"><img src="System/subnavi_invitation.png" alt="ícàıïÂèW"></a></li>
-	                    <li><a href="orchelife/index.html"><img src="System/subnavi_orchelife.png" alt="ÉIÉPÉâÉCÉt"></a></li>
-	                    <li><a href="http://www-cgi.ed.tus.ac.jp/tus-cgi-bin/orche/blog.cgi"><img src="System/subnavi_blog.png" alt="ícàıÉuÉçÉO"></a></li>
-	                    <li><a href="about/index.html"><img src="System/subnavi_about.png" alt="ìñícÇ…Ç¬Ç¢Çƒ"></a></li>
+                        <li><a href="concert_info/index.html"><img src="System/subnavi_concert.png" alt="ÊºîÂ•è‰ºöÊÉÖÂ†±"></a></li>
+                        <li><a href="conductor_trainer/index.html"><img src="System/subnavi_conductor_trainer.png" alt="ÊåáÊèÆËÄÖ&amp;„Éà„É¨„Éº„Éä„ÉºÁ¥π‰ªã"></a></li>
+	                    <li><a href="invitation/index.html"><img src="System/subnavi_invitation.png" alt="Âõ£Âì°ÂãüÈõÜ"></a></li>
+	                    <li><a href="orchelife/index.html"><img src="System/subnavi_orchelife.png" alt="„Ç™„Ç±„É©„Ç§„Éï"></a></li>
+	                    <li><a href="http://www-cgi.ed.tus.ac.jp/tus-cgi-bin/orche/blog.cgi"><img src="System/subnavi_blog.png" alt="Âõ£Âì°„Éñ„É≠„Ç∞"></a></li>
+	                    <li><a href="about/index.html"><img src="System/subnavi_about.png" alt="ÂΩìÂõ£„Å´„Å§„ÅÑ„Å¶"></a></li>
                     </ul>
                 </section>
-            </section>
+            </div>
+            -->
         </nav>
     </header>

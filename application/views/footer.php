@@ -1,16 +1,10 @@
     <footer>
-        <a href="#global-menu"><img src="System/triangle.gif" alt=""/>‚±‚Ìƒy[ƒW‚Ìæ“ª‚Ö–ß‚é<img src="System/triangle.gif" alt=""/></a>
+        <a href="#global-menu"><img src="System/triangle.gif" alt=""/>ã“ã®ãƒšãƒ¼ã‚¸ã®å…ˆé ­ã¸æˆ»ã‚‹<img src="System/triangle.gif" alt=""/></a>
         <br/>
         <small>
-            ’˜ìŒ :“Œ‹ž—‰È‘åŠwŠÇŒ·Šy’c<br/>
-            –{ƒz[ƒ€ƒy[ƒW“à‚É‹LÚ‚³‚ê‚½•¶ÍA‰æ‘œ“™‚Ì–³’f“]Ú‚ð‹Ö‚¶‚Ü‚·B<br/>
+            è‘—ä½œæ¨©:å“é£²ã¿.com<br/>
+            æœ¬ãƒ›ãƒ¼ãƒ ãƒšãƒ¼ã‚¸å†…ã«è¨˜è¼‰ã•ã‚ŒãŸæ–‡ç« ã€ç”»åƒç­‰ã®ç„¡æ–­è»¢è¼‰ã‚’ç¦ã˜ã¾ã™ã€‚<br/>
         </small>
-        <address>
-            y‚¨–â‚¢‡‚í‚¹z<br/>
-            <img src="System/mailto_all.gif" alt="e-mail(ÂŠO)"><br/>
-            ‰¹Šy’c‘Ì‚Ì‰‰‘t‰ïƒ`ƒ‰ƒV‹²‚Ýž‚Ý‚ÉŠÖ‚·‚é‚¨–â‚¢‡‚í‚¹‚Í‰º‹L‚ÌƒAƒhƒŒƒX‚ð‚²—˜—p‚­‚¾‚³‚¢B<br/>
-            <img src="System/mailto_pub.gif" alt="e-mail(L•ñ)"><br/>
-            </address>
     </footer>
 </body>
 </html>
