@@ -27,15 +27,17 @@ class Home extends MY_Controller {
  		}
  		
  		$data['page_title'] = '卓飲み.com トップページ';
- 		$data['user_img'] = $this -> user -> get_user_img(user_id);
- 		$data['user_name'] = $this -> user -> get_user_name(user_id);
+ 		$data['user_img'] = $this -> user -> get_User(user_id);
+ 		$data['user_name'] = $this -> user -> get_User(user_id);
  		
+ 		/*
  		$taglist = $this -> user -> get_top_tags();
  		$i = 0;
  		foreach($taglist as $tag){
  			$data['tag' + $i] = $tag;
  			$i++;
  		}
+ 		*/
 		
 		$this->load->view('header.php',$data);
 		$this->load->view('home/main.php',$data);
