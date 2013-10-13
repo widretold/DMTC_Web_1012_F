@@ -9,9 +9,10 @@ class Home extends MY_Controller {
 	{
 		$this -> load -> model('User_model','user');
 		$this -> load -> model('Event_model','event');
+		$user_id = $this->session->set_userdata('user_id');
 		
  		$data = "";
- 		$eventlist = $this -> user -> get_event_list();
+ 		$eventlist = $this -> event -> get_event_list();
  		
  		$i = 1;
  		foreach($eventlist as $event_id){
@@ -26,8 +27,8 @@ class Home extends MY_Controller {
  		}
  		
  		$data['page_title'] = '卓飲み.com トップページ';
- 		$data['user_img'] = $this -> user -> get_user_img();
- 		$data['user_name'] = $this -> user -> get_user_name();
+ 		$data['user_img'] = $this -> user -> get_user_img(user_id);
+ 		$data['user_name'] = $this -> user -> get_user_name(user_id);
  		
  		$taglist = $this -> user -> get_top_tags();
  		$i = 0;

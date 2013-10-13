@@ -5,7 +5,7 @@
     <title>卓飲み.com</title>
 </head>
 <body>
-	<img src="logo.png">
+	<img src="image/logo.png"><br/>
     卓飲み.comへようこそ！<br/>
     卓飲み.comは、大学周辺で卓飲み仲間を呼ぶことが出来る理科大生専用のサイトです。</br>
     <br/>

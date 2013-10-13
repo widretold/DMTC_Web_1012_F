@@ -18,7 +18,7 @@
 <body>
     <header>
         <nav>
-        <a href="index.html"><img src = "logo.png" alt="卓飲み.com"></a>
+        <a href="index.html"><img src = "../../image/logo.png" alt="卓飲み.com"></a>
         <!--
             <div id="global-menu">
                 

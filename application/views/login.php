@@ -13,7 +13,7 @@ $this->load->helper('form');
 
 echo form_open('login/login_exe');
 
-echo form_label('username: ', 'username');
+echo form_label('user_id', 'username');
 $data = array('name' => 'username', 'id' => 'username', 'size' => '25');
 echo form_input($data);
 echo "<br>";
