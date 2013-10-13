@@ -17,6 +17,7 @@ $this->load->library('session');
 
 $this->session->set_userdata('username', $this->input->post('username'));
 $this->session->set_userdata('password', $this->input->post('password'));
+$this->session->set_userdata('access_uri','home');
 
 redirect('auth');
 }
