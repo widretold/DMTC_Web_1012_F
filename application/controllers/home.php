@@ -43,10 +43,10 @@ class Home extends MY_Controller {
  		/**********************************************
  		*********   Load Test FOR TEST USE     ********
  		**********************************************/
- 		$event_id = 1;
-		$eventInfo = $this -> event -> getEvent($event_id);
-		$data['event_title'] = $eventInfo->title;
- 		$data['event_img'] = $eventInfo->image_url;
+ 		// $event_id = 1;
+		// $eventInfo = $this -> event -> getEvent($event_id);
+		// $data['event_title'] = $eventInfo->title;
+ 		// $data['event_img'] = $eventInfo->image_url;
  		
  		
  		
