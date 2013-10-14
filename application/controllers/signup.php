@@ -7,9 +7,45 @@ class Signup extends MY_Controller {
 
 	public function index()
 	{
-		$data["page_title"] = "‘ìˆù‚Ý.com - V‹K“o˜^";
+		$data["page_title"] = "å“é£²ã¿.com - æ–°è¦ç™»éŒ² Step0";
 		$this->load->view('header.php',$data);
-		$this->load->view('signup/main.php',$data);
+		$this->load->view('signup/index.php',$data);
+		$this->load->view('footer.php',$data);
+	}
+	
+	public function step1()
+	{
+		$address = $this -> input -> post('address', TRUE);
+		$data["page_title"] = "å“é£²ã¿.com - æ–°è¦ç™»éŒ² Step1";
+		
+		/******************************************************
+		********************   Sending Email ******************
+		******************************************************/
+		
+		$this->load->library('email');
+		
+		$config['protocol'] = 'sendmail';
+		//$config['mailpath'] = '/usr/sbin/sendmail';
+		$config['charset'] = 'iso-8859-1';
+		$config['wordwrap'] = TRUE;
+		$this->email->initialize($config);
+		
+		
+		$this->email->from('your@example.com', 'Your Name');
+		$this->email->to('someone@example.com'); 
+		$this->email->cc('another@another-example.com'); 
+		$this->email->bcc('them@their-example.com'); 
+		$this->email->subject('Email Test');
+		$this->email->message('Testing the email class.');	
+		$this->email->send();
+		echo $this->email->print_debugger();		
+		
+		/******************************************************
+		*******************   Load Email **********************
+		******************************************************/
+		
+		$this->load->view('header.php',$data);
+		$this->load->view('signup/step1.php',$data);
 		$this->load->view('footer.php',$data);
 	}
 }
