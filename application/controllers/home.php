@@ -17,23 +17,24 @@ class Home extends MY_Controller {
 		**********   Loading UserProfile     ***********
 		************************************************/
 		
-		$myprofile = $this -> user -> getUser(user_id);
+		$myprofile = $this -> user -> getUser($user_id);
  		//var_dump($myprofile);
  		
- 		$data[user_name] = $myprofile['name'];
- 		$data[user_img]  = $myprofile['user_img'];
+ 		$data['user_name'] = $myprofile -> name;
+ 		$data['user_img']  = $myprofile -> image_url;
  		
 		/***********************************************
 		**********   Loading EventList       ***********
 		************************************************/
 		
 		$event_list_amount = 9;
-		$eventlist = $this -> event -> getEvent_list($event_list_amount);
+		//$eventlist = $this -> event -> getEvent_list($event_list_amount);
+		$eventlist = $this -> event -> new_Event($event_list_amount);
 		$event_title_array = array();
 		$event_img_array = array();
 		foreach($eventlist as $eventInfo){
-			$event_title_array[] = $eventInfo["title"];
-			$event_img_array[] = $eventInfo["img"];
+			$event_title_array[] = $eventInfo -> title;
+			$event_img_array[] = $eventInfo -> img;
 		}
 		$data['event_array_amount'] = $event_list_amount;
  		$data['event_title_array'] = $event_title_array;
@@ -44,15 +45,15 @@ class Home extends MY_Controller {
  		**********************************************/
  		$event_id = 1;
 		$eventInfo = $this -> event -> getEvent($event_id);
-		$data['event_title'] = $eventInfo['title'];
- 		$data['event_img'] = $eventInfo['img'];
+		$data['event_title'] = $eventInfo->title;
+ 		$data['event_img'] = $eventInfo->image_url;
  		
  		
  		
  		/***********************************************
 		**********      Load Tag     *******************
 		***********************************************/
-		$data['tags'] = $this -> event -> getTags(10)
+		$data['tags'] = $this -> event -> getTags(10);
  		
  		
  		
