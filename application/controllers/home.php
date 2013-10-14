@@ -29,7 +29,7 @@ class Home extends MY_Controller {
 		
 		$event_list_amount = 9;
 		//$eventlist = $this -> event -> getEvent_list($event_list_amount);
-		$eventlist = $this -> event -> new_Event($event_list_amount);
+		$eventlist = $this -> event -> newEvent($event_list_amount);
 		$event_title_array = array();
 		$event_img_array = array();
 		foreach($eventlist as $eventInfo){

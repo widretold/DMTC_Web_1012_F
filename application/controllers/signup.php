@@ -27,7 +27,7 @@ class Signup extends MY_Controller {
 		********************   Add Detabase ******************
 		******************************************************/
 				
-		//$this -> load -> model('P_User','temp');
+		//$this -> load -> model('P_user','temp');
 		$userInfo = array();
 		$userInfo['number'] = $number;
 		$interval = 60*60*24;
@@ -99,7 +99,7 @@ class Signup extends MY_Controller {
 		$number = $this -> input -> get('num',TRUE);
 		$recieved_key = $this -> input -> get('key',TRUE);
 		
-		//$this -> load -> model('U_Pass','temp');
+		//$this -> load -> model('U_pass','temp');
 		//$key = $this -> temp -> getUser($number);
 		
 		//FOR TEST USE
