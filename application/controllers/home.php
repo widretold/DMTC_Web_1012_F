@@ -7,11 +7,20 @@ class Home extends MY_Controller {
 
 	public function index()
 	{
-		$this -> load -> model('User_model','user');
-		$this -> load -> model('Event_model','event');
+		$this -> load -> model('User','user');
+		$this -> load -> model('Event','event');
 		$user_id = $this->session->set_userdata('user_id');
 		
  		$data = "";
+ 		
+ 		$array = (1,2,3,4,5);
+		print_r($array);
+		var_dump($array);
+ 		
+ 		$myprofile = $this -> user -> getUser(0);
+ 		var_dump($myprofile);
+ 		
+ 		
  		
  		/*
  		$eventlist = $this -> event -> get_event_list();
